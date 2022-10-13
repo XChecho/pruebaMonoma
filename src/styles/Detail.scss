@@ -249,3 +249,60 @@ input:checked + .slide:before {
     font-weight: bold;
     font-size: var(--lg);
 }
+
+@media (max-width: 729px){
+    .container{
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .headerContain{
+        display: flex;
+        justify-content: center;
+    }
+    .banner{
+        max-width: inherit;
+    }
+
+    .banner img{
+        max-width: 100%;
+    }
+
+    .objectsContain {
+        box-sizing: border-box;
+        padding: 4px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .textContain h2 {
+        margin-top: 0;
+    }
+
+    .recomended {
+        display: none;
+    }
+
+    .infoAditionalContain{
+        flex-direction: column;
+    }
+
+    .infoAditionalContain div{
+        padding-bottom: 1rem;
+    }
+
+    .iconsDetail p{
+        font-size: var(--xs);
+    }
+
+    .logoCard {
+        width: 2rem;
+    }
+
+    .priceContain p { 
+        margin-right: 1rem;
+    }
+    .infoAditionalContain div h3 p{
+        font-size: var(--sm);
+    }
+}
