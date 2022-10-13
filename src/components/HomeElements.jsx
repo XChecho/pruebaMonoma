@@ -21,16 +21,16 @@ const HomeElements = () => {
         <p className="description">Marianao, Sant Boi de Llobregat</p>
         <div className="infoContainerHome">
             <ul className="iconsContainer">
-                <div className="iconsDetail">
-                    <img src={areaIcon} alt="" className="logoCard"/>
+                <div>
+                    <img src={areaIcon} alt=""/>
                     <p>102 m^</p>
                 </div >
-                <div className="iconsDetail">
-                    <img src={bedIcon} alt="" className="logoCard"/>
+                <div>
+                    <img src={bedIcon} alt=""/>
                     <p>3</p>
                 </div>
-                <div className="iconsDetail"> 
-                    <img src={bathIcon} alt="" className="logoCard"/>
+                <div> 
+                    <img src={bathIcon} alt=""/>
                     <p>2</p>
                 </div>
             </ul>

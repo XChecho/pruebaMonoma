@@ -17,12 +17,17 @@
 }
 
 @media (max-width: 1200px){
+    .container {
 
+        margin-left: 4px;
+        margin-right: 4px;
+        box-sizing: border-box;
+    }
     .title {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 2rem;
+        margin-bottom: 1rem;
     }
     .elementsContainer {
         display: flex;

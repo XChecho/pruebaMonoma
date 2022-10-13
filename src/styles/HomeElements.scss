@@ -42,7 +42,7 @@
     align-self: center;
 }
 
-.iconsDetail p{
+.iconsContainer p{
     font-size: var(--md);
     font-weight: bold;
     color: var(--hardgray);
@@ -50,7 +50,7 @@
     margin: 0;
 }
 
-.logoCard {
+.iconsContainer img {
     width: 3.5rem;
 }
 
@@ -85,19 +85,20 @@
     cursor: pointer;
 }
 
-@media (max-width: 640px){
-    .iconsDetail {
-        font-size: var(--xs);
-        font-weight: 500;
-    }
-    .logoCard {
-        width: 3rem;
-    }
-    .price{
+@media (max-width: 729px){
+    .card h2 {
         font-size: var(--lg);
     }
-    .infoButton {
+    .description{
         font-size: var(--md);
-        height: 1rm;
+    }
+    .iconsContainer img{
+        width: 2rem;
+    }
+    .iconsContainer p{
+        font-size: var(--sm);
+    }
+    .infoContainerHome p{
+        font-size: var(--md);
     }
 }
