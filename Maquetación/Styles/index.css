@@ -1,0 +1,143 @@
+:root {
+    --principal: #ff5000;
+    --softgray: #bcbcbc;
+    --hardgray: #7c7c7c;
+    --xs: 12px;
+    --sm: 14px;
+    --md: 20px;
+    --lg: 28px;
+    --xl: 36px;
+}
+
+body {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title, .logo {
+    width: 11rem;
+}
+
+.elementsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.card {
+    height: auto;
+    width: auto;
+}
+
+.bannerCard {
+    object-fit: contain;
+    width: 100%;
+}
+
+.card h2 {
+    color: var(--principal);
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: var(--xl);
+}
+
+.description {
+    color: var(--softgray);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--lg);
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.iconsDetail {
+    padding-right: 0;
+    align-self: center;
+}
+
+.iconsDetail p{
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--hardgray);
+    text-align: center;
+    margin: 0;
+}
+
+.logoCard {
+    width: 3.5rem;
+}
+
+.price {
+    color: var(--hardgray);
+    vertical-align: center;
+    font-size: var(--xl);
+    font-weight: bolder;
+}
+
+.containButton {
+    width: 100%;
+    display: flex;
+}
+
+.infoButton {
+    background-color: white;
+    font-size: var(--lg);
+    font-weight: bold;
+    border-radius: 4rem;
+    border-color: var(--principal);
+    color: var(--principal);
+    height: 4rem;
+    width: 100%;
+    align-self: center;
+    vertical-align: center;
+}
+
+@media (max-width: 1280px){
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    .elementsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .iconsDetail {
+        font-size: var(--xs);
+        font-weight: 500;
+    }
+    .logoCard {
+        width: 3rem;
+    }
+    .price{
+        font-size: var(--lg);
+    }
+    .infoButton {
+        font-size: var(--md);
+        height: 1rm;
+    }
+
+}
+
+
+

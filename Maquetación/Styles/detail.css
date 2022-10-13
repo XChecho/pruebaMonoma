@@ -1,0 +1,344 @@
+:root {
+    --principal: #ff5000;
+    --softgray: #bcbcbc;
+    --hardgray: #7c7c7c;
+    --xs: 12px;
+    --sm: 14px;
+    --md: 20px;
+    --lg: 28px;
+    --xl: 36px;
+}
+
+body {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContain{
+    display: flex;
+    align-items: center;
+}
+
+.headerContain img:nth-child(1) {
+    height: 1rem;
+    padding: 1rem;
+}
+
+.headerContain img:nth-child(2) {
+    height: 3rem;
+    padding: 1rem;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner div{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.banner img {
+    width: 2000px;
+}
+
+.objectsContain {
+    margin-left: 6rem;
+    width: 70%;
+}
+
+.textContain h2{
+    color: var(--principal);
+    margin: 0;
+    margin-top: 2rem;
+    font-size: var(--xl);
+}
+
+.descriptionShort{
+    color: var(--softgray);
+    margin-top: 0;
+    font-size: var(--lg);
+}
+
+.descriptionLarge p {
+    margin: 0;
+    color: var(--hardgray);
+    font-size: var(--md);
+    text-align: justify;
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 1rem;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.iconsDetail {
+    padding-right: 0;
+    align-self: center;
+}
+
+.iconsDetail p{
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--hardgray);
+    text-align: center;
+    margin: 0;
+}
+
+.logoCard {
+    width: 3.5rem;
+}
+
+.priceContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.priceContain p {
+    color: var(--principal);
+    vertical-align: center;
+    font-size: var(--lg);
+    font-weight: bolder;
+    margin-right: 3rem;
+}
+
+.priceContain button{
+    width: 3.5rem;
+    background-color: white;
+    border-style: none;
+}
+
+.infoAditionalContain{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.infoAditionalContain div{
+    padding-right: 6rem;
+}
+
+.infoAditionalContain div h3{
+    margin: 0;  
+    font-size: var(--md);
+    color: var(--hardgray);
+    font-weight:bolder;
+}
+
+.infoAditionalContain div p {
+    margin: 0;
+    font-size: var(--md);
+    color: var(--hardgray);
+}
+
+.mapsImage {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mapsImage img{
+    width: inherit;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.contact p {
+    color: var(--principal);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.contact label {
+    position: relative;
+    display: inline-block;
+    margin-inline: 1rem;
+    width: 55px;
+    height: 34px;
+}
+
+.contact label input {
+    display:none;
+}
+
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--principal);
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 25px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slide {
+    background-color: var(--hardgray);
+    padding-left: 40px;
+}
+
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+
+.slide.round {
+    border-radius: 34px;
+}
+
+.slide.round:before {
+    border-radius: 50%;
+}
+
+.contact button {
+    background-color: white;
+    border-radius: 4rem;
+    border: solid 2px var(--principal);
+    font-size: var(--md);
+    padding-block: 8px;
+    padding-inline: 2rem;
+    margin-right: 1rem;
+    color: var(--principal);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.recomended {
+    margin-left: 6rem;
+    width: 85%;
+    height: 50%;
+}
+
+.recomended h2{
+    color: var(--hardgray);
+    font-weight: bold;
+    font-size: var(--lg);
+}
+
+.cardRecomended {
+    height: 25%;
+    width: auto;
+}
+
+.bannerCardRecomended {
+    object-fit: contain;
+    width: 100%;
+}
+
+.cardRecomended h2 {
+    color: var(--principal);
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: var(--xl);
+}
+
+.recomendedCardContain {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.descriptionRecomended {
+    color: var(--softgray);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--md);
+}
+
+.infoContainerRecomended {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+}
+
+.iconsContainerRecomended {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.iconsContainerRecomended div{
+    padding-right: 0;
+    align-self: center;
+}
+
+.iconsContainerRecomended div p{
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--hardgray);
+    text-align: center;
+    margin: 0;
+}
+
+.logoCardRecomended {
+    width: 2.5rem;
+}
+
+.price {
+    color: var(--hardgray);
+    vertical-align: center;
+    font-size: var(--lg);
+    font-weight: bolder;
+}
+
+.containButton {
+    width: 100%;
+    display: flex;
+}
+
+.infoButton {
+    background-color: white;
+    font-size: var(--md);
+    font-weight: bold;
+    border-radius: 4rem;
+    border: solid 2px var(--principal);
+    color: var(--principal);
+    height: 3rem;
+    width: 100%;
+    align-self: center;
+    vertical-align: center;
+}
