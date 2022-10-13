@@ -1,9 +1,22 @@
 import React from 'react'
-import './styles/global.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+//Pages
+import Home from './pages/Home'
+import Detail from './pages/Detail'
+
+//Styles
+import './styles/global.css'
+
 
 const App = () => {
 	return (
-		<h1>Hola Mundo, Bienvenidos al Curso Practico de React!</h1>
+		<BrowserRouter>
+			<Routes>
+				<Route exact path='/' element={<Home/>}/>
+				<Route exact path='/detail' element={<Detail/>}/>
+			</Routes>
+		</BrowserRouter>
 	);
 }
 

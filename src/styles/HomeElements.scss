@@ -1,35 +1,4 @@
-:root {
-    --principal: #ff5000;
-    --softgray: #bcbcbc;
-    --hardgray: #7c7c7c;
-    --xs: 12px;
-    --sm: 14px;
-    --md: 20px;
-    --lg: 28px;
-    --xl: 36px;
-}
-
-body {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.title, .logo {
-    width: 11rem;
-}
-
-.elementsContainer {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2rem;
-}
+@import 'vars';
 
 .card {
     height: auto;
@@ -56,7 +25,7 @@ body {
     font-size: var(--lg);
 }
 
-.infoContainer {
+.infoContainerHome {
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -109,20 +78,14 @@ body {
     width: 100%;
     align-self: center;
     vertical-align: center;
+    
 }
 
-@media (max-width: 1280px){
+.infoButton:hover {
+    cursor: pointer;
+}
 
-    .title {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 2rem;
-    }
-    .elementsContainer {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 640px){
     .iconsDetail {
         font-size: var(--xs);
         font-weight: 500;
@@ -137,8 +100,4 @@ body {
         font-size: var(--md);
         height: 1rm;
     }
-
 }
-
-
-

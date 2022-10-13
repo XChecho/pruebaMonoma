@@ -13,16 +13,6 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
-		alias : {
-            "@components": path.resolve(__dirname, "src/components/"),
-            "@containers": path.resolve(__dirname, "src/containers/"),
-            "@pages": path.resolve(__dirname,"src/pages/"),
-            "@styles": path.resolve(__dirname, "src/styles/"),
-            "@icons": path.resolve(__dirname, "src/assets/icons/"),
-            "@images": path.resolve(__dirname, "src/assets/images/"),
-			"@public": path.resolve(__dirname, "public/")
-            
-        }
 	},
 	module: {
 		rules: [
@@ -51,7 +41,7 @@ module.exports = {
 				
 			},
 			{
-				test:  /\.(png|jp(e*)g|svg|gif|webp)$/,
+				test:  /\.(png|jp(e*)g|svg|webp)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -73,10 +63,6 @@ module.exports = {
 		})
 	],
     devServer: {
-		static: {
-		  directory: path.join(__dirname, 'public'),
-		  },
-		compress: true,
-		port: 3005,
-	  }
+		historyApiFallback: true,
+      }
 }

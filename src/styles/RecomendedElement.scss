@@ -1,0 +1,87 @@
+@import 'vars';
+
+.cardRecomended {
+    height: 25%;
+    width: auto;
+}
+
+.bannerCardRecomended {
+    object-fit: contain;
+    width: 100%;
+}
+
+.cardRecomended h2 {
+    color: var(--principal);
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: var(--xl);
+}
+
+.recomendedCardContain {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.descriptionRecomended {
+    color: var(--softgray);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--md);
+}
+
+.infoContainerRecomended {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+}
+
+.iconsContainerRecomended {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.iconsContainerRecomended div{
+    padding-right: 0;
+    align-self: center;
+}
+
+.iconsContainerRecomended div p{
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--hardgray);
+    text-align: center;
+    margin: 0;
+}
+
+.logoCardRecomended {
+    width: 2.5rem;
+}
+
+.price {
+    color: var(--hardgray);
+    vertical-align: center;
+    font-size: var(--lg);
+    font-weight: bolder;
+}
+
+.containButton {
+    width: 100%;
+    display: flex;
+}
+
+.infoButton {
+    background-color: white;
+    font-size: var(--md);
+    font-weight: bold;
+    border-radius: 4rem;
+    border: solid 2px var(--principal);
+    color: var(--principal);
+    height: 3rem;
+    width: 100%;
+    align-self: center;
+    vertical-align: center;
+}

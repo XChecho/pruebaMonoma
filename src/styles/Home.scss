@@ -1,0 +1,31 @@
+@import 'vars';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title, .logo {
+    width: 11rem;
+}
+
+.elementsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+@media (max-width: 1200px){
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    .elementsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
